@@ -1,0 +1,31 @@
+.wrapper{
+    max-width: 1000px;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,.125);
+    padding:15px;
+}
+.bg-color{
+    background-color: #f6f6f6;
+}
+.pad-0{
+    padding: 0 !important;
+}
+.nav-link{
+    color: #414f5c;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 5px solid #f6f6f6;
+    border-radius: 0 !important;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills .show>.nav-link{
+    color: #414f5c;
+    border-bottom: 5px solid #d22929;
+    background-color: #fff;
+    border-radius: 0;
+}
+#playeriframe iframe{
+    width:100%;
+}

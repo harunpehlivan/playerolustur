@@ -1,0 +1,1300 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- Bootstrap CSS -->
+
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" media="screen" type="text/css" href="assets/plugins/colorpicker/css/colorpicker.css"/>
+
+    <title>harunpehlivan.fm.tc - Radyo Player Kodu Olustur, HTML5 Radyo Player, Radyo Flash Player ssl player</title>
+
+    <style>
+
+        #playeriframe iframe{
+
+            min-height: 50vh;
+
+            overflow-y: auto;
+
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div>
+
+    <div class="wrapper">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-3 bg-color pad-0">
+
+                <ul class="nav nav-pills nav-stacked">
+
+                    <li role="presentation" class="active">
+
+                        <a href="#v-v2" aria-controls="v-v2" role="tab" data-toggle="tab">Radyo Player V2</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v3" aria-controls="v-v3" role="tab" data-toggle="tab">Radyo Player V3</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v4" aria-controls="v-v4" role="tab" data-toggle="tab">Radyo Player V4</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v5" aria-controls="v-v5" role="tab" data-toggle="tab">Radyo Player V5</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v6" aria-controls="v-v6" role="tab" data-toggle="tab">Radyo Player V6</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v7" aria-controls="v-v7" role="tab" data-toggle="tab">Radyo Player V7</a>
+
+                    </li>
+                   
+
+                    <li role="presentation">
+
+                        <a href="#v-v0" aria-controls="v-v0" role="tab" data-toggle="tab">Mobil Player</a>
+
+                    </li>
+
+                    <li role="presentation">
+
+                        <a href="#v-v1" aria-controls="v-v1" role="tab" data-toggle="tab">Flash Player</a>
+
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+            <div class="col-sm-12 col-md-9">
+
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane active" id="v-v2" role="tabpanel" aria-labelledby="v-v2t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv2" id="formv2">
+    <div class="form-group">
+        <i data-feather="info" data-toggle="tooltip" data-placement="top" title="Player Genişliği"></i>
+        <label for="width_v2">Genişlik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="width_v2" name="width" placeholder="Genişlik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="height_v2">Yükseklik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="height_v2" name="height" placeholder="Yükseklik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ip_v2">Radyo IP ve Port Adresi:</label>
+        <input type="text" class="form-control" id="ip_v2" name="ip" placeholder="Radyo IP ve Port Adresi" required>
+    </div>
+    <div class="form-group">
+        <label for="streampath_v2">Stream Path:</label>
+        <input type="text" class="form-control" value="/stream" id="streampath_v2" name="streampath" placeholder="Stream Path" required>
+    </div>
+    <div class="form-group">
+        <label for="streamtype_v2">Stream Type:</label>
+        <select class="form-control" id="streamtype_v2" name="streamtype">
+            <option value="shoutcast2" selected>shoutcastv2</option>
+            <option value="shoutcast2" selected>shoutcastv1</option>
+            <option value="icecast2">icecast2</option>
+            <option value="radionomy">radionomy</option>
+            <option value="radiojar">radiojar</option>
+            <option value="radioco">radioco</option>
+            <option value="other">other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="name_v2">Radyo İsmi:</label>
+        <input type="text" class="form-control" id="name_v2" name="name" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="color1_v2">Player Rengi:</label>
+        <input autocomplete="off" type="text" class="form-control colorPickerContent" id="color1" name="color1" placeholder="" required>
+    </div>
+    <div class="form-group" style="display:none">
+        <label for="website_v2">Radyo Site Adresi:</label>
+        <input type="text" class="form-control" id="website" name="website" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v2">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v2" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group" style="display:none">
+        <label for="info_v2">Parça Bilgisi:</label>
+        <select class="form-control" id="info_v2" name="info">
+            <option value="true" selected>Evet Parça Bilgisini Göster</option>
+            <option value="false">Hayır Parça Bilgisini Gösterme</option>
+        </select>
+    </div>
+<div class="form-group">
+
+        <label for="theme_v2">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v2" src="https://playerolustur.com/img/v2.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v3" role="tabpanel" aria-labelledby="v-v3t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv3" id="formv3">
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="width_v3">Genişlik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="width_v3" name="width" placeholder="Genişlik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="responsive_v3">Responsive:</label>
+        <select class="form-control" id="responsive_v3" name="responsive">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playlist_v3">Çalma Listesini Göster:</label>
+        <select class="form-control" id="playlist_v3" name="playlist">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ip_v3">Radyo IP ve Port Adresi:</label>
+        <input type="text" class="form-control" id="ip_v3" name="ip" placeholder="Radyo IP ve Port Adresi" required>
+    </div>
+    <div class="form-group">
+        <label for="logo_v3">Radyo Logo:</label>
+        <input type="text" class="form-control" id="logo_v3" name="logo" placeholder="Örnek: http://radyohizmeti.com/logo/logo.png">
+    </div>
+    <div class="form-group">
+        <label for="name_v3">Radyo İsmi:</label>
+        <input type="text" class="form-control" id="name_v3" name="name" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="theme_v3">Tema Rengi:</label>
+        <select class="form-control" id="theme_v3" name="theme">
+            <option value="whiteControllers" selected>Beyaz</option>
+            <option value="blackControllers">Siyah</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="color1_v3">Player Üst Rengi:</label>
+        <input autocomplete="off" type="text" class="form-control colorPickerContent" id="color1" name="color1" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color2_v3">Player Alt Rengi:</label>
+        <input autocomplete="off" type="text" class="form-control colorPickerContent" id="color2" name="color2" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="bottom_v3">Alt Player Göster:</label>
+        <select class="form-control" id="bottom_v3" name="bottom">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="title_v3">Çalan Parça İsmini Göster:</label>
+        <select class="form-control" id="title_v3" name="title">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v3">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v3" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="facebook_v3">Facebook Butonu Göster:</label>
+        <select class="form-control" id="facebook_v3" name="facebook">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="twitter_v3">Twitter Butonu Göster:</label>
+        <select class="form-control" id="twitter_v3" name="twitter">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+<div class="form-group">
+
+        <label for="theme_v3">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v3" src="https://playerolustur.com/img/v3.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v4" role="tabpanel" aria-labelledby="v-v4t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv4" id="formv4">
+    <div class="form-group">
+        <label for="protocol_v4">Shoutcast Version:</label>
+        <select class="form-control" id="protocol_v4" name="protocol">
+            <option value="http" selected>http://</option>
+            <option value="https">https://</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ip_v4">Radyo IP Adresi:</label>
+        <input type="text" class="form-control" id="ip_v4" name="ip" placeholder="Örnek: 123.123.123.123 veya radyolar.yayindinle.net" required>
+    </div>
+    <div class="form-group">
+        <label for="port_v4">Radyo Port Adresi:</label>
+        <input type="text" class="form-control" id="port_v4" name="port" placeholder="Örnek: 8330" required>
+    </div>
+    <div class="form-group">
+        <label for="shoutcast_v4">Shoutcast Version:</label>
+        <select class="form-control" id="shoutcast_v4" name="shoutcast">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sid_v4">Shoutcast Sid:</label>
+        <input type="text" class="form-control" id="sid_v4" name="sid" placeholder="Örnek: 1 (Shoutcast v2 Kullanıyorsa)">
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v4">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v4" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="direction_v4">Player Yön:</label>
+        <select class="form-control" id="direction_v4" name="direction">
+            <option value="right" selected>Sağ</option>
+            <option value="left">Sol</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="initialsize_v4">Player Başlangıç Boyu:</label>
+        <select class="form-control" id="initialsize_v4" name="initialsize">
+            <option value="maximized" selected>Normal</option>
+            <option value="minimized">Mini</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="mobile_v4">Player Mobil Yapılandırma::</label>
+        <select class="form-control" id="mobile_v4" name="mobile">
+            <option value="false">Hayır</option>
+            <option value="low">Düşük</option>
+            <option value="medium">Orta</option>
+            <option value="high">Yüksek</option>
+            <option value="very high">Çok Yüksek</option>
+            <option value="ultra">En İyi</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="topmenu_v4">Üste Menü Göster:</label>
+        <select class="form-control" id="topmenu_v4" name="topmenu">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playercontrol_v4">Player Kontrol:</label>
+        <select class="form-control" id="playercontrol_v4" name="playercontrol">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playervolumecontrol_v4">Player Ses Kontrol:</label>
+        <select class="form-control" id="playervolumecontrol_v4" name="playervolumecontrol">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group" style="display: none">
+        <label for="playedsongtitle_v4">Çalan Parça İsmini Göster:</label>
+        <select class="form-control" id="playedsongtitle_v4" name="playedsongtitle">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group" style="display: none">
+        <label for="showartistname_v4">Sanatçı İsmini Göster:</label>
+        <select class="form-control" id="showartistname_v4" name="showartistname">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playerbottomcolor_v4">Player Alt Renk:</label>
+        <select class="form-control" id="playerbottomcolor_v4" name="playerbottomcolor">
+            <option value="colored" selected>Evet</option>
+            <option value="transparent">Hayır (Transparan)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playermaincolor_v4">Player Ana Renk:</label>
+        <select class="form-control" id="playermaincolor_v4" name="playermaincolor">
+            <option value="dynamic" selected="selected">Dinamik Renk</option>
+            <option value="red">Kırmızı</option>
+            <option value="pink">Pembe</option>
+            <option value="purple">Mor</option>
+            <option value="deep purple">Koyu Mor</option>
+            <option value="indigo">Çivit Mavisi</option>
+            <option value="blue">Mavi</option>
+            <option value="light blue">Açık Mavi</option>
+            <option value="cyan">Cam Göbeği</option>
+            <option value="teal">Turkuaz</option>
+            <option value="green">Yeşil</option>
+            <option value="light green">Açık Yeşil</option>
+            <option value="lime">Kireç Rengi</option>
+            <option value="yellow">Sarı</option>
+            <option value="amber">Kehribar Rengi</option>
+            <option value="orange">Turuncu</option>
+            <option value="deep orange">Koyu Turuncu</option>
+            <option value="brown">Koyu Turuncu</option>
+            <option value="grey">Gri</option>
+            <option value="blue Grey">Mavi Gri</option>
+            <option value="black">Siyah</option>
+            <option value="white">Beyaz</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playerbuttoncolor_v4">Player Buton Renk:</label>
+        <select class="form-control" id="playerbuttoncolor_v4" name="playerbuttoncolor">
+            <option value="dynamic" selected="selected">Dinamik Renk</option>
+            <option value="red">Kırmızı</option>
+            <option value="pink">Pembe</option>
+            <option value="purple">Mor</option>
+            <option value="deep purple">Koyu Mor</option>
+            <option value="indigo">Çivit Mavisi</option>
+            <option value="blue">Mavi</option>
+            <option value="light blue">Açık Mavi</option>
+            <option value="cyan">Cam Göbeği</option>
+            <option value="teal">Turkuaz</option>
+            <option value="green">Yeşil</option>
+            <option value="light green">Açık Yeşil</option>
+            <option value="lime">Kireç Rengi</option>
+            <option value="yellow">Sarı</option>
+            <option value="amber">Kehribar Rengi</option>
+            <option value="orange">Turuncu</option>
+            <option value="deep orange">Koyu Turuncu</option>
+            <option value="brown">Koyu Turuncu</option>
+            <option value="grey">Gri</option>
+            <option value="blue Grey">Mavi Gri</option>
+            <option value="black">Siyah</option>
+            <option value="white">Beyaz</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="name_v4">Radyo İsmi:</label>
+        <input type="text" class="form-control" id="name_v4" name="name" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="logo_v4">Radyo Logo:</label>
+        <input type="text" class="form-control" id="logo_v4" name="logo" placeholder="Örnek: http://radyohizmeti.com/logo/logo.png">
+    </div>
+<div class="form-group">
+
+        <label for="theme_v4">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v4" src="https://playerolustur.com/img/v4.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v5" role="tabpanel" aria-labelledby="v-v5t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv5" id="formv5">
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="width_v5">Genişlik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="width_v5" name="width" placeholder="Genişlik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="height_v5">Yükseklik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="height_v5" name="height" placeholder="Yükseklik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ip_v5">Radyo IP ve Port Adresi:</label>
+        <input type="text" class="form-control" id="ip_v5" name="ip" placeholder="Radyo IP ve Port Adresi" required>
+    </div>
+    <div class="form-group">
+        <label for="name_v5">Radyo İsmi:</label>
+        <input type="text" class="form-control" id="name_v5" name="name" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="theme_v5">Tema Rengi:</label>
+        <select class="form-control" id="theme_v5" name="theme">
+            <option value="1" selected>Beyaz</option>
+            <option value="2">Siyah</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="color1_v5">Player Rengi:</label>
+        <input autocomplete="off" type="text" class="form-control colorPickerContent" id="color1" name="color1" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color2_v5">Player Rengi 2:</label>
+        <input autocomplete="off" type="text" class="form-control colorPickerContent" id="color2" name="color2" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="facebook_v5">Facebook Paylaş:</label>
+        <select class="form-control" id="facebook_v5" name="facebook">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v5">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v5" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="playlist_v5">Çalma Listesini Göster:</label>
+        <select class="form-control" id="playlist_v5" name="playlist">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="title_v5">Çalan Parça İsmini Göster:</label>
+        <select class="form-control" id="title_v5" name="title">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="logo_v5">Radyo Logo:</label>
+        <input type="text" class="form-control" id="logo_v5" name="logo" placeholder="Örnek: http://radyohizmeti.com/logo/logo.png">
+    </div>
+<div class="form-group">
+
+        <label for="theme_v5">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v5" src="https://playerolustur.com/img/v5.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v6" role="tabpanel" aria-labelledby="v-v6t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv6" id="formv6">
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="width_v6">Genişlik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="width_v6" name="width" placeholder="Genişlik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="height_v6">Yükselik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="height_v6" name="height" placeholder="Yükselik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="ip_v6">Stream URL:</label>
+        <input type="text" class="form-control" id="ip_v6" name="ip" placeholder="Radyo IP ve Port Adresi" required>
+    </div>
+    <div class="form-group">
+        <label for="player_v6">Player Stili:</label>
+        <select class="form-control" id="player_v6" name="player">
+            <option value="standard_centered" selected>Standart Ortalı</option>
+            <option value="standard_fullwidth" >Standart Geniş</option>
+            <option value="sticky_fullwidth" >Sticky Geniş</option>
+            <option value="sticky_centered" >Sticky Ortalı</option>
+            <option value="without_history" >Geçmişsiz</option>
+
+
+
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="logo_v6">Görsel Bulunamadı Resmi:</label>
+        <input type="text" class="form-control" id="logo_v6" value="noimageavailable.jpg" name="logo" placeholder="Örnek: http://radyohizmeti.com/logo/logo.png">
+    </div>
+
+    <div class="form-group">
+        <label for="colorbg_v6">Sayfanın Arkaplan Rengi:</label>
+        <input autocomplete="off" type="text" value="f4f4f4" class="form-control colorPickerContent" id="colorbg_v6" name="color_bg" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color1_v6">Arkaplan Rengi:</label>
+        <input autocomplete="off" type="text" value="ffffff" class="form-control colorPickerContent" id="color1_v6" name="color1" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color2_v6">Border Rengi:</label>
+        <input autocomplete="off" type="text" value="bfbfbf" class="form-control colorPickerContent" id="color2_v6" name="color2" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color3_v6">Bar Rengi:</label>
+        <input autocomplete="off" type="text" value="ffffff" class="form-control colorPickerContent" id="color3_v6" name="color3" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color4_v6">Play Buton Rengi:</label>
+        <input autocomplete="off" type="text" value="ffffff" class="form-control colorPickerContent" id="color4_v6" name="color4" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color5_v6">Play Buton Hover Rengi:</label>
+        <input autocomplete="off" type="text" value="d7d7d7" class="form-control colorPickerContent" id="color5_v6" name="color5" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color6_v6">Şarkı - Şarkıcıyı Ayıran Çizgi Rengi:</label>
+        <input autocomplete="off" type="text" value="bfbfb" class="form-control colorPickerContent" id="color6_v6" name="color6" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color7_v6">Geçmiş - Zaman Rengi:</label>
+        <input autocomplete="off" type="text" value="000000" class="form-control colorPickerContent" id="color7_v6" name="color7" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color8_v6">Geçmiş - Şarkı Rengi:</label>
+        <input autocomplete="off" type="text" value="000000" class="form-control colorPickerContent" id="color8_v6" name="color8" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color9_v6">Geçmiş - Şarkıcı Rengi:</label>
+        <input autocomplete="off" type="text" value="575757" class="form-control colorPickerContent" id="color9_v6" name="color9" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color10_v6">Geçmiş - Zaman Hover Rengi</label>
+        <input autocomplete="off" type="text" value="FFFFFF" class="form-control colorPickerContent" id="color10_v6" name="color10" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color11_v6">Geçmiş - Şarkı Hıver Rengi::</label>
+        <input autocomplete="off" type="text" value="FFFFFF" class="form-control colorPickerContent" id="color11_v6" name="color11" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color12_v6">Geçmiş - Şarkıcı Hover Rengi::</label>
+        <input autocomplete="off" type="text" value="FFFFFF" class="form-control colorPickerContent" id="color12_v6" name="color12" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color13_v6">Geçmiş - Arkaplan Hover Rengi:</label>
+        <input autocomplete="off" type="text" value="dd0060" class="form-control colorPickerContent" id="color13_v6" name="color13" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v6">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v6" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+<div class="form-group">
+
+        <label for="theme_v6">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v6" src="https://playerolustur.com/img/v6.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+                    <div class="tab-pane" id="v-v7" role="tabpanel" aria-labelledby="v-v7t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv7" id="formv7">
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="width_v7">Genişlik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="width_v7" name="width" placeholder="Genişlik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <!--<i data-feather="info" data-toggle="tooltip" data-placement="top" title="Tooltip on left"></i>-->
+        <label for="height_v7">Yükselik:</label>
+        <div class="input-group">
+            <input type="number" class="form-control" id="height_v7" name="height" placeholder="Yükselik" required>
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">px</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="ip_v7">Stream URL:</label>
+        <input type="text" class="form-control" id="ip_v7" name="ip" placeholder="Radyo IP ve Port Adresi" required>
+    </div>
+    <div class="form-group">
+        <label for="player_v7">Player Stili:</label>
+        <select class="form-control" id="player_v7" name="player">
+            <option value="classic_skin_dark" selected>Klasik Siyah</option>
+            <option value="classic_skin_white" >Klasik Beyaz</option>
+            <option value="metal_skin_dark" >Metalik Siyah</option>
+            <option value="metal_skin_white" >Metalik Beyaz</option>
+            <option value="minimal_skin_dark" >Minimal Siyah</option>
+            <option value="minimal_skin_white" >Minimal Beyaz</option>
+            <option value="modern_skin_dark" >Modern Siyah</option>
+            <option value="modern_skin_white" >Modern Beyaz</option>
+           *
+
+
+
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="facebook_v7">Facebook APP ID:</label>
+        <input type="text" class="form-control" id="facebook_v7" value="" name="facebook" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="color2_v7">Arkaplan Rengi:</label>
+        <input autocomplete="off" type="text" value="ffffff" class="form-control colorPickerContent" id="color2_v7" name="color2" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="color1_v7">Zaman Rengi:</label>
+        <input autocomplete="off" type="text" value="888888" class="form-control colorPickerContent" id="color1_v7" name="color1" placeholder="" required>
+    </div>
+    <div class="form-group">
+        <label for="autoplay_v7">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v7" name="autoplay">
+            <option value="yes" selected>Evet</option>
+            <option value="no">Hayır</option>
+        </select>
+    </div>
+<div class="form-group">
+
+        <label for="theme_v7">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="v7" src="https://playerolustur.com/img/v7.png">
+
+        </div>
+
+    </div>
+
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v0" role="tabpanel" aria-labelledby="v-v0t">
+
+                        <form role="form" action="javascript:void();" method="post" name="formv0" id="formv0">
+
+    <div class="form-group">
+        <label for="ip_v0">Radyo IP :</label>
+        <input type="text" class="form-control" id="ip_v0" name="ip" placeholder="Radyo IP veya link" required placeholder="https://xxx.radyohizmeti.com veya http://xxx.radyohizmeti.com">
+    </div>
+    <div class="form-group">
+        <label for="port_v0">Port:</label>
+        <input type="text" class="form-control" id="port_v0" name="port" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="autoplay_v0">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v0" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="theme_v0">Tema:</label>
+        <select class="form-control" id="theme_v0" name="theme">
+            <option value="mobil,50" selected>Mobil</option>
+        </select>
+    </div>
+<div class="form-group">
+
+        <label for="theme_v0">Görünüm:</label>
+
+        <div class="preview">
+
+            <img id="pvsk" alt="mobil" src="https://playerolustur.com/img/mobil.png">
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                    <div class="tab-pane" id="v-v1" role="tabpanel" aria-labelledby="v-v1t">
+
+                        
+<form role="form" action="javascript:void();" method="post" name="formv1" id="formv1">
+    <div class="form-group">
+        <label for="ip_v1">Radyo IP :</label>
+        <div class="input-group">
+            <div class="input-group-addon">
+                <span class="input-group-text" id="inputGroupPrepend">http://</span>
+            </div>
+            <input type="text" class="form-control" id="ip_v1" name="ip" placeholder="Radyo IP" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="port_v1">Port:</label>
+        <input type="text" class="form-control" id="port_v1" name="port" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="autoplay_v1">Player Otomatik Başlat:</label>
+        <select class="form-control" id="autoplay_v1" name="autoplay">
+            <option value="true" selected>Evet</option>
+            <option value="false">Hayır</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="theme_v1">Tema:</label>
+        <select class="form-control" id="theme_v1" name="theme">
+
+            <option value="3dpixelstyle,50" selected="selected">3dpixelstyle</option>
+            <option value="atomicred,50">Atomicred</option>
+            <option value="bekle,50">Bekle</option>
+            <option value="bluemetal,28">Bluemetal</option>
+            <option value="comet,50">Comet</option>
+            <option value="controlpanel,37">Controlpanel</option>
+            <option value="dangdang,30">Dangdang</option>
+            <option value="fashion,40">Fashion</option>
+            <option value="festival,38">Festival</option>
+            <option value="grungetape,70">Grungetape</option>
+            <option value="icecreamsneaka,45">Icecreamsneaka</option>
+            <option value="kleur,55">Kleur</option>
+            <option value="magma,43">Magma</option>
+            <option value="metarby10,32">Metarby10</option>
+            <option value="modieus,32">Modieus</option>
+            <option value="nacht,18">Nacht</option>
+            <option value="neon,55">Neon</option>
+            <option value="pearlized,38">Pearlized</option>
+            <option value="pixelize,70">Pixelize</option>
+            <option value="playcasso,50">Playcasso</option>
+            <option value="schoon,40">Schoon</option>
+            <option value="seawave,40">Seawave</option>
+            <option value="silverywhite,50">Silverywhite</option>
+            <option value="snel,32">Snel</option>
+            <option value="stijl,45">Stijl</option>
+            <option value="traganja,40">Traganja</option>
+
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="theme_v1">Görünüm:</label>
+        <div class="preview">
+            <img id="pvsk" alt="Skin Preview" src="https://radyohizmeti.com/skin/3dpixelstyle.png">
+        </div>
+    </div>
+    <div class="col-xs-12 text-center">
+        <button type="submit" id="btn-submit" class="btn btn-success">Player Kodunu Oluştur</button>
+        <button type="reset" id="btn-reset" class="btn btn-danger">Formu Sıfırla</button>
+    </div>
+</form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="playerModalLabel">Player Kodu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="playercode">Kod:</label>
+                        <textarea class="form-control" id="playercode" rows="3"></textarea>
+                    </div>
+                </form>
+                <div id="playeriframe"></div>
+                <div id="swf">
+                    <div id="container_rdy3645164"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+
+
+
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
+
+    <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+
+    <script type="text/javascript" src="assets/plugins/colorpicker/js/colorpicker.js"></script>
+
+    <script>
+
+        $(function () {
+
+            feather.replace();
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+
+
+            $('.colorPickerContent').ColorPicker({
+
+                onSubmit: function (hsb, hex, rgb, el) {
+
+                    $(el).val(hex);
+
+                    $(el).ColorPickerHide();
+
+                },
+
+                onBeforeShow: function () {
+
+                    $(this).ColorPickerSetColor(this.value);
+
+                },
+
+                onChange: function (hsb, hex, rgb, el) {
+
+                    var $id = $(this).attr('id');
+
+                    $(el).val(hex);
+
+                }
+
+            }).bind('keyup', function () {
+
+                $(this).ColorPickerSetColor(this.value.replace('#', ''));
+
+            });
+
+        });
+
+        $('#playerModal').on('hidden.bs.modal', function (e) {
+
+            $('#playeriframe').html('');
+
+            $('#playercode').val('');
+
+        })
+
+    </script>
+<div class="col-xs-12 text-center">
+         <button type="button" style="background-color:#0783f7;"><a href="https://ssl.playerolustur.com" style="color:#ffffff">Radyonuz SSL destekliyorsa Tıklayın</a></button>
+         <button type="button" style="background-color:#f7bc07;"><a href="http://sslesiz.playerolustur.com" style="color:#ffffff">Radyonuz SSL desteklemiyorsa Tıklayın</a></button>
+                   
+</div>
+<br>
+<br>
+<br>
+
+<center>
+          <!--<p>WEBSITE BY RadyoHizmeti</p>-->          <p>BY  TEBİMTEBİTAGEM GAZETESİ RADYO TELEVİZYONU</p>
+          <p>© Copytright 2020. Tüm Hakları Saklıdır.</p>
+                           
+
+
+    <script>
+    $(function () {
+        $('#formv2').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v2').val();
+            var height = $('#height_v2').val();
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v2 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v2" src="https://playerolustur.com/players/v2/player.php?'+get+'" width="'+width+'"  height="'+height+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv3').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v3').val();
+            var height = $('#height_v3').val();
+            console.log(get);
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v3 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v3" width="'+width+'"  height="'+height+'" src="https://playerolustur.com/players/v3/?'+get+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv4').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v4').val();
+            var height = $('#height_v4').val();
+            console.log(get);
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v4 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v4" width="'+width+'"  height="'+height+'" src="https://playerolustur.com/players/v4/player.php?'+get+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv5').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v5').val();
+            var height = $('#height_v5').val();
+
+            console.log(get);
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v5 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v5" width="'+width+'"  height="'+height+'" src="https://playerolustur.com/players/v5/?'+get+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv6').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v6').val();
+            var height = $('#height_v6').val();
+            var player_file = $('#player_v6').val();
+            console.log(get);
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v6 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v6" width="'+width+'"  height="'+height+'" src="https://playerolustur.com/players/v6/'+player_file+'.php?'+get+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv7').on('submit', function (e) {
+            e.preventDefault();
+            var get = $(this).serialize();
+            var width = $('#width_v7').val();
+            var height = $('#height_v7').val();
+
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v7 start -->' +
+                '<iframe name="RadyoHizmeti-shoutcast-player-v7" width="'+width+'"  height="'+height+'" src="https://playerolustur.com/players/v7/?'+get+'" marginwidth="0" marginheight="0" scrolling="no" border="0" frameborder="0" allowtransparency="true"><\/iframe>' +
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script>
+    $(function () {
+        $('#formv0').on('submit', function (e) {
+            console.log("a");
+            e.preventDefault();
+
+            var ip = $('#ip_v0').val();
+
+            var port = $('#port_v0').val();
+
+            var skinInfo = $('#theme_v0').val().split(',');
+
+            var skin = skinInfo[0];
+            var server = "shoutcast";
+            var autoplay = $('#autoplay_v0').val();
+            var standard = "html5";
+
+            if (ip != "" && (skin != "" || standard == 'html5') && server != "") {
+                var url =  ip;
+
+                if (port != "") {
+                    url += ":" + port;
+                }
+                if(autoplay=="true"){
+                 var ap =' autoplay="autoplay"';
+                }else{
+                    var ap ='';
+                }
+
+                if (url.indexOf('/;stream.mp3')) {
+                    url += '/;stream.mp3';
+                }
+                var width = $('#width_v0').val();
+                var height = $('#height_v0').val();
+
+                var html = '';
+                html = ' ' +
+                    '<!-- radyohizmeti.com player v0 start -->' +
+                    '<!--Player Baslangic--><audio width="'+width+'"  height="'+height+'" controls ' + ap + '><source src="' + url + '" type="audio/mp3">Mobil player Destekler.</audio><!--Player Bitis-->' +
+                    '<!-- radyohizmeti.com player end -->';
+                html += '<!-- radyohizmeti.com player start -->';
+            }
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+    <script type="text/javascript" src="https://www.radyohizmeti.com/player/swfobject.js"></script>
+<script>
+    $(function () {
+        $('#theme_v1').change(function(){
+
+            var sn = $(this).val().split(",");
+
+            $('#pvsk').attr("src", 'https://www.radyohizmeti.com/skin/'+sn[0]+'.png');
+
+        });
+
+        $('#formv1').on('submit', function (e) {
+            console.log("a");
+            e.preventDefault();
+
+            var ip = $('#ip_v1').val();
+            var port = $('#port_v1').val();
+
+            var skinInfo = $('#theme_v1').val().split(',');
+
+            var skin = skinInfo[0];
+            var height = skinInfo[1];
+
+            var server = "shoutcast";
+            var autoplay = $('#autoplay_v1').val();
+            var standard = "standard";
+            var url = "http://" + ip;
+
+            if (port != "") {
+                url += ":" + port;
+            }
+            if (autoplay == "true") {
+                var ap = ' autoplay="autoplay"';
+            } else {
+                var ap = '';
+            }
+
+            if (url.indexOf('/;stream.mp3')) {
+                url += '/;stream.mp3';
+            }
+            var html = '';
+            html = ' ' +
+                '<!-- radyohizmeti.com player v1 start -->' +
+                '<div id="container_rdy3645164"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.\n <a href="https://www.radyohizmeti.com/">Shoutcast &amp; Icecast Server</a></div>\n <script type="text/javascript" src="//www.radyohizmeti.com/player/swfobject.js"><'+'/script>\n <script type="text/javascript">\n var s1 = new SWFObject(\'https://www.radyohizmeti.com/player/player.swf\', \'player\',"340","'+height+'","9","#FFFFFF");\n s1.addParam("allowfullscreen","true");\n s1.addParam("allowscriptaccess","always");\n s1.addParam("flashvars","skin=http://www.radyohizmeti.com/skin/'+skin+'.swf&title=Live Stream&type=sound&file='+url+'&13202692901&duration=9999&id=scplayer&autostart='+autoplay+'");\n s1.write("container_rdy3645164");\n <'+'/script>'+
+                '<!-- radyohizmeti.com player end -->';
+            html += '<!-- radyohizmeti.com player start -->';
+            $('#playercode').val(html);
+            $('#playeriframe').html(html);
+            $('#playerModal').modal('show');
+
+        });
+    });
+</script>
+</body>
+<footer><div style="text-align:center; font-size:13px; bottom:0;"> TTGRT | harunpehlivan.fm.tc | <a href="https://radyoplayerbuilder.harunpehlivanitdew.repl.co/">radyoplayerbuilder ile kendi radyonuzun radyo kodlarını oluşturabilir, düzenleyebilir ve HTML5 mobil destekli flash player kodu online canlı oluşturabilirsiniz.</a><br>
+Player Oluştur Sitesi Bir TTGRT | harunpehlivan.fm.tc Kuruluşudur izinsiz Kopyalanamaz Yayınlanamaz irtibat Tel:0552 741 0904 </div></footer>
+</html>
+
